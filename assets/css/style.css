@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+a,
+button:active,
+button:focus,
+input:active,
+input:focus {
+  outline: 0 !important;
+}
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1f14;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  z-index: 1000;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1500&q=80")
+    center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.hero h1,
+.hero p,
+.btn {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 60px;
+  color: gold;
+  text-shadow: 2px 2px 15px black;
+}
+
+.hero p {
+  font-size: 22px;
+}
+
+/* BUTTON */
+.btn {
+  display: block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  display: block;
+  color: #fff;
+  background: #111;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px;
+}
+
+/* CONTACT */
+.contact a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  background: white;
+}
+
+/* about */
+.aboutSubs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
