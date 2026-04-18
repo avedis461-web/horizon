@@ -41,7 +41,7 @@ nav {
 }
 
 nav a {
-  color: gold;
+  color: #766c55;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
@@ -111,7 +111,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background: gold;
+  background: #766c55;
 }
 
 /* SECTIONS */
@@ -121,7 +121,7 @@ section {
 }
 
 h2 {
-  color: gold;
+  color: #766c55;
   margin-bottom: 20px;
 }
 
@@ -163,7 +163,7 @@ h2 {
   display: inline-block;
   margin: 10px;
   padding: 12px 20px;
-  background: gold;
+  background: #766c55;
   color: black;
   text-decoration: none;
   border-radius: 8px;
@@ -186,5 +186,5 @@ h2 {
 }
 .userCount span {
   font-size: 70px;
-  color: gold;
+  color: #766c55;
 }
