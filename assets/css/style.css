@@ -54,14 +54,12 @@ nav a:hover {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1500&q=80")
-    center/cover;
+  background: #142b2e;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-
   position: relative;
 }
 
@@ -74,7 +72,14 @@ nav a:hover {
   top: 0;
   left: 0;
 }
-
+.homeImg {
+  margin-bottom: 20px;
+}
+.homeImg img {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
 .hero h1,
 .hero p,
 .btn {
@@ -84,7 +89,7 @@ nav a:hover {
 
 .hero h1 {
   font-size: 60px;
-  color: gold;
+  color: #fff;
   text-shadow: 2px 2px 15px black;
 }
 
@@ -97,8 +102,8 @@ nav a:hover {
   display: block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: gold;
-  color: black;
+  background: #000;
+  color: #fff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
@@ -106,7 +111,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background: white;
+  background: gold;
 }
 
 /* SECTIONS */
@@ -175,4 +180,11 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.userCount {
+  margin-top: 30px;
+}
+.userCount span {
+  font-size: 70px;
+  color: gold;
 }
